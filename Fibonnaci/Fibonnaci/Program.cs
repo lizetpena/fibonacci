@@ -34,7 +34,7 @@ namespace Fibonnaci
 
             //calculate
 
-            while (input > fiboSeq[fiboSeq.Count - 1])
+            while (input > fiboSeq[fiboSeq.Count-1])
             {
 
                 long nextFiboNumber = start + next;
