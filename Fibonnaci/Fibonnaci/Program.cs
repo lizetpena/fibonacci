@@ -65,13 +65,13 @@ namespace Fibonnaci
             }
             else if (fiboSeq.Count == 1)
             {
-                Console.WriteLine("The two preceding FIbonacci numbers are: ");
+                Console.WriteLine("The two preceding Fibonacci numbers are: ");
                 Console.WriteLine(fiboSeq[1]);
                 Console.WriteLine(fiboSeq[0]);
             }
             else
             {
-                Console.WriteLine("ERROR");
+                Console.WriteLine($"ERROR: the integer {input} is not part of the Fibonnaci sequence");
             }
         }
     }
