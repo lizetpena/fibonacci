@@ -19,17 +19,18 @@ namespace Fibonnaci
 		static void Main(string[] args)
         {
             Console.WriteLine("Enter one number from the Fibonacci sequence and hit ENTER: ");
-            long input = 0;
-            Int64.TryParse(Console.ReadLine().Trim(), out input);
+            Int64.TryParse(Console.ReadLine().Trim(), out var input);
 
             long start = 0;
             long next = 1;
 
 
             //Initialize
-            List<long> fiboSeq = new List<long>();
-            fiboSeq.Add(start);
-            fiboSeq.Add(next);
+            var fiboSeq = new List<long>
+            {
+                start,
+                next
+            };
 
 
             //calculate
@@ -37,7 +38,7 @@ namespace Fibonnaci
             while (input > fiboSeq[fiboSeq.Count-1])
             {
 
-                long nextFiboNumber = start + next;
+                var nextFiboNumber = start + next;
                 fiboSeq.Add(nextFiboNumber);
 
                 start = next;
