@@ -5,9 +5,12 @@ VisualStudioVersion = 15.0.27130.2010
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Fibonnaci", "Fibonnaci\Fibonnaci.csproj", "{0E4700CA-7B89-4A3A-963F-85FE53C595E6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RecursiveFibonacciWithMemoization", "RecursiveFibonacciWithMemoization\RecursiveFibonacciWithMemoization.csproj", "{DDC82EF6-F1B0-40D8-92A8-817712E39D70}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RecursiveFibonacciWithMemoization", "RecursiveFibonacciWithMemoization\RecursiveFibonacciWithMemoization.csproj", "{DDC82EF6-F1B0-40D8-92A8-817712E39D70}"
 EndProject
 Global
+	GlobalSection(Performance) = preSolution
+		HasPerformanceSessions = true
+	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
@@ -27,6 +30,9 @@ Global
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {B5630058-5F2D-4EFA-9D1F-3269D5371292}
+	EndGlobalSection
+	GlobalSection(Performance) = preSolution
+		HasPerformanceSessions = true
 	EndGlobalSection
 	GlobalSection(Performance) = preSolution
 		HasPerformanceSessions = true

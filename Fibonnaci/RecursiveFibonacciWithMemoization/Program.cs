@@ -27,7 +27,7 @@ namespace RecursiveFibonacciWithMemoization
                           select x.Key;
 
 
-                Console.WriteLine("The two preceding FIbonacci numbers are: ");
+                Console.WriteLine("The two preceding Fibonacci numbers are: ");
 
                 fiboSeq.TryGetValue((key.ToList<long>())[0] - 1, out var val1);
                 Console.WriteLine(val1);
