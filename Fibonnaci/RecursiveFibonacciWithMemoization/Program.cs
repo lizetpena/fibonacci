@@ -31,11 +31,17 @@ namespace RecursiveFibonacciWithMemoization
             var number=f.FindFibonacciValue(input);
 
 
-            MaxOutCpuBeforeDisplayingAnswer(f);
+            ConsumeCpuBeforeDisplayingAnswer(f);
             DisplayAnswer(input, f.Map);
         }
 
-        private static void MaxOutCpuBeforeDisplayingAnswer(Fibonacci fib)
+
+        /// <summary>
+        /// This method is only meant to consume CPU time and % of utilization 
+        /// to showcase the Hot Lines on a VS 2017 CPU prolifing session  using Sampling.
+        /// </summary>
+        /// <param name="fib"></param>
+        private static void ConsumeCpuBeforeDisplayingAnswer(Fibonacci fib)
         {
             
             var tasks = new List<Task>();

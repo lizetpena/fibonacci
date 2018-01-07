@@ -9,7 +9,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RecursiveFibonacciWithMemoi
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{89B951BE-CDAB-4A3D-AC51-B88354EE5181}"
 	ProjectSection(SolutionItems) = preProject
-		Performance1.psess = Performance1.psess
+		CPU_Sampling_Perf.psess = CPU_Sampling_Perf.psess
 	EndProjectSection
 EndProject
 Global
@@ -45,6 +45,9 @@ Global
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {B5630058-5F2D-4EFA-9D1F-3269D5371292}
+	EndGlobalSection
+	GlobalSection(Performance) = preSolution
+		HasPerformanceSessions = true
 	EndGlobalSection
 	GlobalSection(Performance) = preSolution
 		HasPerformanceSessions = true
