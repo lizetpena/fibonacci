@@ -7,29 +7,50 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Fibonnaci", "Fibonnaci\Fibo
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RecursiveFibonacciWithMemoization", "RecursiveFibonacciWithMemoization\RecursiveFibonacciWithMemoization.csproj", "{DDC82EF6-F1B0-40D8-92A8-817712E39D70}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{89B951BE-CDAB-4A3D-AC51-B88354EE5181}"
+	ProjectSection(SolutionItems) = preProject
+		Performance1.psess = Performance1.psess
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(Performance) = preSolution
 		HasPerformanceSessions = true
 	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
+		Debug|x64 = Debug|x64
 		Release|Any CPU = Release|Any CPU
+		Release|x64 = Release|x64
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{0E4700CA-7B89-4A3A-963F-85FE53C595E6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{0E4700CA-7B89-4A3A-963F-85FE53C595E6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0E4700CA-7B89-4A3A-963F-85FE53C595E6}.Debug|x64.ActiveCfg = Debug|x64
+		{0E4700CA-7B89-4A3A-963F-85FE53C595E6}.Debug|x64.Build.0 = Debug|x64
 		{0E4700CA-7B89-4A3A-963F-85FE53C595E6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0E4700CA-7B89-4A3A-963F-85FE53C595E6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0E4700CA-7B89-4A3A-963F-85FE53C595E6}.Release|x64.ActiveCfg = Release|x64
+		{0E4700CA-7B89-4A3A-963F-85FE53C595E6}.Release|x64.Build.0 = Release|x64
 		{DDC82EF6-F1B0-40D8-92A8-817712E39D70}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{DDC82EF6-F1B0-40D8-92A8-817712E39D70}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DDC82EF6-F1B0-40D8-92A8-817712E39D70}.Debug|x64.ActiveCfg = Debug|x64
+		{DDC82EF6-F1B0-40D8-92A8-817712E39D70}.Debug|x64.Build.0 = Debug|x64
 		{DDC82EF6-F1B0-40D8-92A8-817712E39D70}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DDC82EF6-F1B0-40D8-92A8-817712E39D70}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DDC82EF6-F1B0-40D8-92A8-817712E39D70}.Release|x64.ActiveCfg = Release|x64
+		{DDC82EF6-F1B0-40D8-92A8-817712E39D70}.Release|x64.Build.0 = Release|x64
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {B5630058-5F2D-4EFA-9D1F-3269D5371292}
+	EndGlobalSection
+	GlobalSection(Performance) = preSolution
+		HasPerformanceSessions = true
+	EndGlobalSection
+	GlobalSection(Performance) = preSolution
+		HasPerformanceSessions = true
 	EndGlobalSection
 	GlobalSection(Performance) = preSolution
 		HasPerformanceSessions = true

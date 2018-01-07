@@ -27,9 +27,11 @@ namespace RecursiveFibonacciWithMemoization
             }
             else
             {
-                
+                //recursion
                 var fibonacciValue = FindFibonacciValue(number - 2) + FindFibonacciValue(number - 1);
                 map.Add(number, fibonacciValue);
+
+                //purposedly adding delay
                 //Thread.Sleep(100);
 
                 return fibonacciValue;

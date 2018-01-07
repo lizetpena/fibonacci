@@ -1,11 +1,27 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Threading;
+using System.Threading.Tasks;
 
 namespace RecursiveFibonacciWithMemoization
 {
     class Program
     {
+        /// <summary>
+        /// This program receives an integer in its console input, 
+        /// If the integer is part of the Fibonnaci Sequence 
+        /// it displays the previous two integers of the sequence. 
+        /// If the integer is not part of the sequence, it displays "ERROR" on the Console
+        /// Output.
+        /// Note:
+        /// In mathematics, the Fibonacci numbers are the numbers in the following integer sequence, 
+        /// called the Fibonacci sequence, and characterized by the fact that every number after the first two is the sum of the two preceding ones.
+        /// 
+        /// </summary>
+        /// <param name="args">One of the integers that are part of the sequence
+        /// 10946 (number 21 of the sequence) anything bigger than that will cause System.StackOverflow on purpose.
+        /// </param>
         static void Main(string[] args)
         {
             Console.WriteLine("Enter one number from the Fibonacci sequence and hit ENTER: ");
@@ -14,9 +30,33 @@ namespace RecursiveFibonacciWithMemoization
             Fibonacci f = new Fibonacci();
             var number=f.FindFibonacciValue(input);
 
+
+            MaxOutCpuBeforeDisplayingAnswer(f);
             DisplayAnswer(input, f.Map);
         }
 
+        private static void MaxOutCpuBeforeDisplayingAnswer(Fibonacci fib)
+        {
+            
+            var tasks = new List<Task>();
+
+            foreach (var item in fib.Map)
+            {
+                var t2 = Task.Run(() => SumKeyValue(item));
+
+                tasks.Add(t2);
+                
+                
+            }
+            Task.WaitAll(tasks.ToArray());
+        }
+
+        private static void SumKeyValue(KeyValuePair<long, long> item)
+        {
+            var delay = 1000; //1000ms delay
+            var sum = item.Key + item.Value;
+            Thread.Sleep(delay);
+        }
 
         private static void DisplayAnswer(long input, Dictionary<long,long> fiboSeq)
         {
